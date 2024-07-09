@@ -1,5 +1,6 @@
 package cgg.microservices.hotel.hotelmicroservice.entities;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -16,6 +17,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@Schema(name = "Hotel", title = "Hotel Entity")
 public class Hotel {
 
     @Id

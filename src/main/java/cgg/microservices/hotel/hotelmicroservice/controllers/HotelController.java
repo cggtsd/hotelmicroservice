@@ -13,11 +13,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 import cgg.microservices.hotel.hotelmicroservice.entities.Hotel;
 import cgg.microservices.hotel.hotelmicroservice.services.HotelService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.AllArgsConstructor;
 
 @RestController
 @RequestMapping("/hotels")
 @AllArgsConstructor
+@Tag(name = "Hotel Controller", description = "This is Hotel Servcie Apis")
 public class HotelController {
 
     private HotelService hotelService;
