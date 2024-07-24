@@ -14,3 +14,9 @@ spring:
 
   # profiles:
   #    active: prod  
+
+okta:
+  oauth2:
+    issuer: https://dev-66345900.okta.com/oauth2/default
+    audience: api://default
+        
